@@ -1,0 +1,25 @@
+<div class="container">
+
+      <button (click)="addData()" pButtontype="button"class="p-button-outlined"> Add Data</button> 
+    <table class="table table-stripped">
+        <tr>
+            <th>Name</th>
+            <th>Age </th>
+            <th>Emp Id</th>
+            <th>Branch </th>
+            <th>Role</th>
+            <th>Edit</th>
+            <th>Delete</th>  
+        </tr>
+        <tr *ngFor="let dt of test">
+            <td >{{dt.name}}</td>
+            <td >{{dt.age}}</td>
+            <td >{{dt.empId}}</td>
+            <td >{{dt.branch}}</td>
+            <td >{{dt.role}}</td>
+            <td>   <button (click)="onUpdate(dt.id,dt)" pButton type="button" class="p-button-outlined"> Update</button> </td>
+            <td>  <button (click)="onDelete(dt.id)" pButtontype="button"class="p-button-outlined"> Delete</button> </td> 
+        </tr>
+
+    </table>
+</div>

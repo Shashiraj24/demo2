@@ -1,0 +1,59 @@
+<div class="container">
+    
+    <div class="card">
+        <div class="text-center">
+            <!-- <h1>Login</h1>
+            <h6>Please Enter Email and Password !!</h6> -->
+           
+            <form [formGroup]="LoginForm1" (ngSubmit)="Login()">
+                <!-- <div class="mb-3">
+                    <label for="exampleInputId1" class="form-label">Id:</label>
+                    <input type="text" class="form-control" formControlName="id">
+                </div> -->
+
+                <div class="mb-3">
+                    <label for="exampleInputName1" class="form-label">Name:</label>
+                    <input type="text" class="form-control" formControlName="name">
+
+                </div>
+                
+                <div class="mb-3">
+                    <label for="exampleInputAge1" class="form-label">Age:</label>
+                    <input type="text" class="form-control" formControlName="age">
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmpId1" class="form-label">EmpId:</label>
+                    <input type="text" class="form-control" formControlName="empId">
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputBranch1" class="form-label">Branch:</label>
+                    <input type="text" class="form-control" formControlName="branch">
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputRole1" class="form-label">Role:</label>
+                    <input type="text" class="form-control" formControlName="role">
+
+                </div>
+
+<!-- 
+                <div class="mb-3 form-check ">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label " for="exampleCheck1">Check me out</label>
+                </div> -->
+
+                <button type="submit" class="btn btn-primary">Update</button>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,14 @@
+.card{
+    margin-top: 10px;
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:burlywood;
+    font-size: 20px;
+    font-style:oblique;
+    
+    }
